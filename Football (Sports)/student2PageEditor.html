@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Editor Page - Student 2</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="CSS/student2PageEditor.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-----header----->
+	<header class="header">
+		<a href="mainpage.html">
+			<img class="navlogo" src="images/footballLogo.png" alt="logo"/>
+		</a>
+		<a href="mainpage.html" class="name">
+			<span id="name">Football Central</span>
+		</a>
+		<nav class="navbar">
+			<a class="header-nav" href="news.html">News</a>
+			<a class="header-nav" href="shop.html">Shop</a>
+			<a class="header-nav" href="thumbnail.html">Clubs</a>
+			<a class="header-nav" href="Student Details.html">About Us</a>
+		</nav>
+		<a id="feedback-btn" href="feedbackForm.html">
+			<button>Contact</button>
+		</a>
+	</header>
+
+    <!----Student information------>
+    <div class="container-body">
+        <h1>Ameesha Senanayake</h1>
+        <div class="student-number">Student 2</div>
+        <div class="student-image">
+            <img src="images/student2.jpg" alt="student 2" class="image"/>
+        </div>
+        <br>
+        <div class="student-details">
+            <b>IIT ID:</b> w1810205<br>
+            <b>UOW ID:</b> 2019771<br>
+            <b>Pages Created:</b>
+            <div class="page-links">
+                <a href="mainpage.html" class="page-link">Home Page</a><br>
+                <a href="feedbackForm.html" class="page-link">Feedback Form</a><br>
+                <a href="news.html" class="page-link">News Page</a><br>
+                <a href="article1.html" class="page-link">Article 1</a><br>
+                <a href="article2.html" class="page-link">Article 2</a><br>
+                <a href="article3.html" class="page-link">Article 3</a><br>
+                <a href="article4.html" class="page-link">Article 4</a><br>
+                External CSS File
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <!------footer------>
+    <footer class="footer">
+		<div class="footer-subscribe">
+            <label for="newsletter" id="label-newsletter">Join Our Newsletter</label><br>
+            <input  type="email" id="email-text" placeholder="Put your email address here..." />
+            <br/>
+            <button onclick="subscribeBtnClicked();" id="subscribeBtn">Subscribe</button>
+        </div>
+		<div class="footer-content">
+            <a href="news.html">News</a><br>
+            <a href="shop.html">Shop</a><br>
+            <a href="Introduction.html">Quiz</a><br>
+            <a href="Student Details.html">About Us</a><br>
+            <a href="thumbnail.html">Clubs</a><br>
+            <a href="sitemap.html">Sitemap</a><br>
+        </div>
+
+        <div class="footer-editor">
+            <span id="footerEditor">The page is edited by:<br>
+                <a href="student2PageEditor.html" class="page-editor">Ameesha Senanayake</a>
+            </span>
+        </div>
+
+
+	</footer>
+
+</body>
+<script src="JS/mainpage.js"></script>
+</html>

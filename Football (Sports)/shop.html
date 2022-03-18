@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shop.css"/>
+    
+    <title>Shop</title>
+</head>
+<body>
+    
+
+        <!-- header-->
+
+        <header class="header">
+            <a href="mainpage.html">
+                <img class="navlogo" src="favicon.ico" alt="logo"/>
+            </a>
+            <a href="mainpage.html" class="name">
+                <span id="name">Football Central</span>
+            </a>
+            <nav class="navbar">
+                <a class="header-nav" href="news.html">News</a>
+                <a class="header-nav" href="shop.html">Shop</a>
+                <a class="header-nav" href="thumbnail.html">Clubs</a>
+                <a class="header-nav" href="Student Details.html">About Us</a>
+            </nav>
+            <a id="feedback-btn" href="feedbackForm.html">
+                <button>Contact</button>
+            </a>
+        </header>
+
+
+        <!--Product page content-->
+
+
+        <h2 id="heading">SHOP HERE</h2>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+     <div id="container1">
+        <div id="product1">
+
+            <img src="images1.jpg" alt="Tshirt">
+            <h2 id="prod1ProdName">Barcelona Tshirt</h2>
+            <div style="display: flex;flex-direction: row; align-self: center;justify-content: center;">
+            <p>$</p><p id="prod1ProdPrice">30</p>
+            </div>
+            <p> Original Barcelona jersey for the best price in the market</p>
+            <span id="sizeandquantity"><label for="size">Choose size:</label>
+
+                <select name="size" id="sizeprduct1">
+                  <option value="small">small</option>
+                  <option value="medium">medium</option>
+                  <option value="large">large</option>
+                  </select>
+                  <label for="size">Choose quantity:</label>
+
+                  <select name="quantity" id="prod1Quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    </select>
+
+                </span><br>
+            <button id="add1" onclick="addToCart(
+                document.getElementById('prod1ProdName').innerHTML,
+                document.getElementById('prod1ProdPrice').innerHTML,
+                document.getElementById('prod1Quantity').value
+            )">Add to cart</button>
+
+        </div>
+        
+
+        <div id="product2">
+            <img src="image2.jpg" alt="Tshirt">
+            <h2 id="prod2ProdName">Liverpool Tshirt</h2>
+            <div style="display: flex;flex-direction: row; align-self: center;justify-content: center;">
+            <p>$</p><p id="prod2ProdPrice">20</p>
+            </div>
+            <p> First team official jersey for the best price in the market</p>
+            <span id="sizeandquantity"><label for="size">Choose size:</label>
+
+                <select name="size" id="sizeprduct2">
+                  <option value="small">small</option>
+                  <option value="medium">medium</option>
+                  <option value="large">large</option>
+                  </select>
+                  <label for="size">Choose quantity:</label>
+
+                  <select name="quantity" id="prod2Quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    </select>
+
+                </span>
+
+
+            <button id= "add2" onclick="addToCart(
+                document.getElementById('prod2ProdName').innerHTML,
+                document.getElementById('prod2ProdPrice').innerHTML,
+                document.getElementById('prod2Quantity').value
+            )">Add to cart</button>
+
+        </div>
+    </div> 
+    <div id="container2">  
+        <div id="product3">
+
+            <img src="image3.jpg" alt="football">
+            <h2 id="prod3ProdName">Addidas football</h2>
+            <div style="display: flex;flex-direction: row; align-self: center;justify-content: center;">
+            <p>$</p><p id="prod3ProdPrice">15</p>
+            </div>
+            <p> Addidas class A quality football</p>
+
+            <span id="sizeandquantity">
+
+                  <label for="size">Choose quantity:</label>
+
+                  <select name="quantity" id="prod3Quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    </select>
+
+                </span>
+
+            <button id ="add3" onclick="addToCart(
+                document.getElementById('prod3ProdName').innerHTML,
+                document.getElementById('prod3ProdPrice').innerHTML,
+                document.getElementById('prod3Quantity').value
+            )">Add to cart</button>
+
+        </div>
+        
+
+        <div id="product4">
+            <img src="image4.jpg" alt="Tshirt">
+            <h2 id="prod4ProdName">football gloves</h2>
+            <div style="display: flex;flex-direction: row; align-self: center;justify-content: center;">
+            <p>$</p><p id="prod4ProdPrice">12</p>
+            </div>
+            <p>Premium high quality football gloves for goalkeepers</p>
+        
+            <span id="sizeandquantity"><label for="size">Choose size:</label>
+
+                <select name="size" id="prod4saProdPrice">
+                  <option value="small">small</option>
+                  <option value="medium">medium</option>
+                  <option value="large">large</option>
+                  </select>
+                  <label for="size">Choose quantity:</label>
+
+                  <select name="quantity" id="prod4Quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    </select>
+
+                </span>
+
+            <button id ="add4" onclick="addToCart(
+                document.getElementById('prod4ProdName').innerHTML,
+                document.getElementById('prod4ProdPrice').innerHTML,
+                document.getElementById('prod4Quantity').value
+            )">Add to cart</button>
+
+
+        </div>
+        </div>
+        <hr>
+       <div id="personaldetails">
+        <br><br><br>
+        <h3 style="font-size:larger; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;text-align:center"><b>Purchase order</b></h3>
+        
+        
+        <br>
+        <form id="details">
+        <p>Please enter you name: <input type="text" id="nameIn" name="name"/></p>
+        <P>Please enter you Email Address: <input type="email" id="email" name="mail"/></P>
+
+        </form>
+        <button id="confirm" value="Confirm Order" onclick="submitCart(
+            document.getElementById('nameIn').value,
+                document.getElementById('email').value
+        )"> Purchase </button>
+        <button id="confirm" value="Confirm Order" onclick="resetCart()"> Reset </button>
+
+
+        <p id="changeText"></p>
+
+    </div>
+
+    
+        <!--footer-->
+
+        <footer class="footer">
+            <div class="footer-subscribe">
+                <label for="newsletter" id="label-newsletter">Join Our Newsletter</label><br>
+                <input  type="email" id="email-text" placeholder="Put your email address here..." />
+                <br/>
+                <button onclick="subscribeBtnClicked();" id="subscribeBtn">Subscribe</button>
+            </div>
+            <div class="footer-content">
+                <a href="news.html">News</a><br>
+                <a href="shop.html">Shop</a><br>
+                <a href="Introduction.html">Quiz</a><br>
+                <a href="Student Details.html">About Us</a><br>
+                <a href="thumbnail.html">Clubs</a><br>
+                <a href="sitemap.html">Sitemap</a><br>
+            </div>
+    
+            <div class="footer-editor">
+                <span id="footerEditor">The page is edited by:<br>
+                   <a href="student1PageEditor.html" class="page-editor">Bhathiya Dissanayake</a>
+                </span>
+            </div>
+    
+    
+        </footer>
+
+
+
+
+
+
+
+
+
+  
+
+    <script src="Shop.js"></script>
+</body>
+
+</html>

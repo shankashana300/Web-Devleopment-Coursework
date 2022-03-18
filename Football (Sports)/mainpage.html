@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Football Central</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="CSS/mainpage.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-----header----->
+	<header class="header">
+		<!-----website logo----->
+		<a href="mainpage.html">
+			<img class="navlogo" src="images/footballLogo.png" alt="logo"/>
+		</a>
+		<!-----website name----->
+		<a href="mainpage.html" class="name">
+			<span id="name">Football Central</span>
+		</a>
+		<!-----navigationbar links----->
+		<nav class="navbar">
+			<a class="header-nav" href="news.html">News</a>
+			<a class="header-nav" href="shop.html">Shop</a>
+			<a class="header-nav" href="thumbnail.html">Clubs</a>
+			<a class="header-nav" href="Student Details.html">About Us</a>
+		</nav>
+		<!-----feedback form button----->
+		<a id="feedback-btn" href="feedbackForm.html">
+			<button>Contact</button>
+		</a>
+	</header>
+
+	<!-----main page content----->
+	<div class="first">
+		<h1 class="footballnews">Football News</h1>
+	</div>
+	
+	<!-- Slideshow container -->
+<div class="slideshow-container">
+
+	<!-- Full-width images with number and caption text -->
+	<a href="article1.html">
+		<div class="slides fade">
+	  		<div class="slideshowNum-text">1 / 4</div>
+	  		<img src="images/article1.jpg" style="width:100%">
+	  		<div class="article-text">PELE CONGRATULATES CRISTIANO RONALDO FOR <br>BREAKING HIS GOALS RECORD</div>
+		</div>
+	</a>
+  
+	<a href="article2.html">
+		<div class="slides fade">
+	  		<div class="slideshowNum-text">2 / 4</div>
+	  		<img src="images/article2.jpg" style="width:100%">
+	  		<div class="article-text">SOLSKJAER’S MOST CRUCIAL WEEK AT MAN UTD <br>STARTS WITH A WIN...</div>
+		</div>
+	</a>
+  
+	<a href="article3.html">
+		<div class="slides fade">
+	  		<div class="slideshowNum-text">3 / 4</div>
+	  		<img src="images/article3.jpg" style="width:100%">
+	  		<div class="article-text">ARTETA PROVES WHY HIS ARSENAL <br>'PROJECT' WILL 'BANG'</div>
+		</div>
+	</a>
+
+	<a href="article4.html">
+		<div class="slides fade">
+			<div class="slideshowNum-text">4 / 4</div>
+			<img src="images/article4.jpg" style="width:100%">
+			<div class="article-text">IS GREENWOOD READY TO FILL MAN UTD'S<br> NO.9 VOID IF CAVANI LEAVES?</div>
+	 	</div>
+	</a>
+  
+	<!-- the next and the previous buttons -->
+	<a class="prevslide" onclick="nextPreviousSlides(-1)">&#10094;</a>
+	<a class="nextslide" onclick="nextPreviousSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- circles at the end of the slideshow -->
+  <div style="text-align:center">
+	<span class="dot" onclick="currentSlide(1)"></span>
+	<span class="dot" onclick="currentSlide(2)"></span>
+	<span class="dot" onclick="currentSlide(3)"></span>
+	<span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+  
+	  <div class="second">
+	  		<h1 class="video-title">Watch How Ronaldo's First-Half Hat-Trick Seals a Comfortable Victory against Cagliari</h1>
+		</div>
+	<div class="video">
+		<iframe width="1020" height="480" src="https://www.youtube.com/embed/tgjJlHi7MyE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="shop">
+	  <div class="shop-image">
+		<div class="trans-box">
+		  <h2 class="heading-shop">Official Soccer Store</h2>
+			  <p class="shop-content">The Premier online soccer shop<br>
+				 to buy all your favorite merchandise
+			 </p>
+			 <a href="shop.html">
+				<button class="btnShop">Shop Here</button>
+			</a>
+		  </div>
+	  </div>
+  </div>
+
+  <div class="quiz">
+	<!--album covers on the quiz details page-->
+	<img id="quiz-image" src="images/mainpage_quiz.jpg" alt="Quiz image" />
+	<div class="quizContent">
+		<h2>
+			HOW MUCH DO YOU KNOW
+			<br> ABOUT FOOTBALL
+		</h2>
+		<!--paragraph to inform user about music quiz-->
+		<p>
+			Enter our latest quiz and check your <br>
+			knowledge to see whether you know  <br>
+			about football as much as you claim.
+		</p>
+
+		<br>
+		
+		<!--Button to enter quiz-->
+		<a href="quiz.html">
+			<button class="btnQuiz">TAKE THE QUIZ</button>
+		</a>
+	</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+
+	<!------footer------>
+	<footer class="footer">
+		<!-----subscribe field----->
+		<div class="footer-subscribe">
+            <label for="newsletter" id="label-newsletter">Join Our Newsletter</label><br>
+            <input  type="email" id="email-text" placeholder="Put your email address here..." />
+            <br/>
+			<!-----subscribe button---->
+            <button onclick="subscribeBtnClicked();" id="subscribeBtn">Subscribe</button>
+        </div>
+		<!-----footer links----->
+		<div class="footer-content">
+            <a href="news.html">News</a><br>
+            <a href="shop.html">Shop</a><br>
+            <a href="Introduction.html">Quiz</a><br>
+            <a href="Student Details.html">About Us</a><br>
+            <a href="thumbnail.html">Clubs</a><br>
+            <a href="sitemap.html">Sitemap</a><br>
+        </div>
+
+		<!-----page-editor name link----->
+        <div class="footer-editor">
+            <span id="footerEditor">The page is edited by:<br>
+                <a href="student2PageEditor.html" class="page-editor">Ameesha Senanayake</a>
+            </span>
+        </div>
+
+
+	</footer>
+
+</body>
+<script src="JS/mainpage.js"></script>
+</html>

@@ -1,0 +1,82 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--The tab name-->
+	<title>About Us</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="CSS/Student Details.css">
+</head>
+<body>
+<!-----header----->
+	<header class="header">
+		<a href="mainpage.html">
+			<img class="navlogo" src="images/footballLogo.png" alt="logo"/>
+		</a>
+		<a href="mainpage.html" class="name">
+			<span id="name">Football Central</span>
+		</a>
+		<nav class="navbar">
+			<a class="header-nav" href="news.html">News</a>
+			<a class="header-nav" href="shop.html">Shop</a>
+			<a class="header-nav" href="thumbnail.html">Clubs</a>
+			<a class="header-nav" href="Student Details.html">About Us</a>
+		</nav>
+		<a id="feedback-btn" href="feedbackForm.html">
+			<button>Contact</button>
+		</a>
+	</header>
+    
+   <!--"div" tag is use because it is easy to style with CSS and Styling is called out by "class" or "id" attribute-->
+   <!--div tag is used as a container for the images and details-->
+   <div class="Student1 imagePosition">
+   <img class="picture" src="images/Bhathiya.jpg" height="260px" alt="Student1"></img><!--Image of student  1 with height adjustment and alternative name(just in case)--->
+   <div class="Apperance Details1">Bhathiya Dissanayake, Student 1</div> <!--Name of student and Role-->
+   </div>
+   
+   <div class="Student2 imagePosition">
+   <img class="picture2" src="images/Aimesha.jpg" height="260px" alt="Student2"></img><!--Image of student 2 with height adjustment and alternative name(just in case)--->
+   <div class="Apperance Details2">Ameesha Chamodi Senanayake, Student 2</div><!--Name of student and Role -->
+   </div>
+   
+   <div class="Student3 imagePosition">
+   <img class="picture3" src="images/Shanku.jpg" height="260px" alt="Student3"></img><!--Image of student  3 with height adjustment and alternative name(just in case)--->
+   <div class="Apperance Details3">Shankashana Prathaban Krishnakumar, Student 3</div><!--Name of student and Role-->
+   </div>
+   
+   <div class="Student4 imagePosition">
+   <img class="picture4" src="images/Yathee.jpg" height="260px" alt="Student4"></img><!--Image of student 4 with height adjustment and alternative name(just in case)--->
+   <div class="Apperance Details4" >Yatheesha Divaki Rangodage, Student 4</div><!--Name of student and Role-->
+   </div>
+   
+   
+   	<!------footer------>
+	<footer class="footer">
+		<div class="footer-subscribe">
+            <label for="newsletter" id="label-newsletter">Join Our Newsletter</label><br>
+            <input  type="email" id="email-text" placeholder="Put your email address here..." />
+            <br/>
+            <button onclick="subscribeBtnClicked();" id="subscribeBtn">Subscribe</button>
+        </div>
+		<div class="footer-content">
+            <a href="news.html">News</a><br>
+            <a href="shop.html">Shop</a><br>
+            <a href="Introduction.html">Quiz</a><br>
+            <a href="Student Details.html">About Us</a><br>
+            <a href="thumbnail.html">Clubs</a><br>
+            <a href="sitemap.html">Sitemap</a><br>
+        </div>
+
+        <div class="footer-editor">
+            <span id="footerEditor">The page is edited by:<br>
+                <a href="Student3PageEditor.html" class="page-editor">Shankashana Prathaban Krishnakumar</a>
+            </span>
+        </div>
+
+
+	</footer>
+	<script src="JS/mainpage.js" > </script> <!--The Javascript-->
+</body>
+</html>

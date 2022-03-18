@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Editor Page - Student 1</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="student1Page.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+
+
+    <body>
+        <header class="header">
+            <a href="mainpage.html">
+                <img class="navlogo" src="favicon.ico" alt="logo"/>
+            </a>
+            <a href="mainpage.html" class="name">
+                <span id="name">Football Central</span>
+            </a>
+            <nav class="navbar">
+                <a class="header-nav" href="news.html">News</a>
+                <a class="header-nav" href="shop.html">Shop</a>
+                <a class="header-nav" href="thumbnail.html">Clubs</a>
+                <a class="header-nav" href="Student Details.html">About Us</a>
+            </nav>
+            <a id="feedback-btn" href="feedbackForm.html">
+                <button>Contact</button>
+            </a>
+        </header>
+    <!--back to top button-->
+    
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <div class="container-body">
+            <h1>Bhathiya Dissanayake</h1>
+            <div class="student-number">Student 1</div>
+            <div class="student-image">
+                <img src="student1.PNG" alt="student 1 image" class="image"/>
+            </div>
+            <br>
+            <div class="student-details">
+                <b>IIT ID:</b> 20200235<br>
+                <b>UOW ID:</b> w1810000<br>
+                <b>Pages Created:</b>
+                <div class="page-links">
+                    <a href="presentation page.html" class="page-link">Presentation page</a><br>
+                    <a href="shop.html" class="page-link">Buy products page</a><br>
+                    <a href="student1PageEditor.html" class="page-link">page editor student1</a><br>
+                    Shop CSS File
+                    Shop js File
+                </div>
+            </div>
+        </div>
+    
+        <br>
+        <footer class="footer">
+            <div class="footer-subscribe">
+                <label for="newsletter" id="label-newsletter">Join Our Newsletter</label><br>
+                <input  type="email" id="email-text" placeholder="Put your email address here..." />
+                <br/>
+                <button onclick="subscribeBtnClicked();" id="subscribeBtn">Subscribe</button>
+            </div>
+            <div class="footer-content">
+                <a href="news.html">News</a><br>
+                <a href="shop.html">Shop</a><br>
+                <a href="Introduction.html">Quiz</a><br>
+                <a href="Student Details.html">About Us</a><br>
+                <a href="thumbnail.html">Clubs</a><br>
+                <a href="sitemap.html">Sitemap</a><br>
+            </div>
+    
+            <div class="footer-editor">
+                <span id="footerEditor">The page is edited by:<br>
+                    <a href="student1PageEditor.html" class="page-editor">Bhathiya Dissanayake</a>
+                </span>
+            </div>
+    
+    
+        </footer>
+
+<!--java script functinality to the back to top button-->
+<script>
+    //Getting the button:
+        mybutton = document.getElementById("myBtn");
+        
+        // When the user scrolls down 20px from the top of the document, showing  the button
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        
+        // When the user clicks on the button, scroll back to the top 
+        function topFunction() {
+          document.documentElement.scrollTop = 0; 
+        }
+</script>
+
+</body>
+</html>

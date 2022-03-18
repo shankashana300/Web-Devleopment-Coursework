@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  
+
+    <link rel="stylesheet" href="CSS/thumbnail.css"/>
+   
+
+    <script defer src="JS/thumbnail.js"></script>
+    <title>Football Centeral | Clubs </title>
+</head>
+
+<body>
+    <!-----header----->
+		<header class="header">
+			<a href="mainpage.html">
+				<img class="navlogo" src="Images/footballLogo.png" alt="logo"/>
+			</a>
+			<a href="mainpage.html" class="name">
+				<span id="name">Football Central</span>
+			</a>
+			<nav class="navbar">
+				<a class="header-nav" href="news.html">News</a>
+				<a class="header-nav" href="#shop">Shop</a>
+				<a class="header-nav" href="#tickets">Tickets</a>
+				<a class="header-nav" href="#AboutUs">About Us</a>
+			</nav>
+			<a id="feedback-btn" href="feedbackForm.html">
+				<button>Contact</button>
+			</a>
+		</header>
+    
+
+        <!-- Title -->
+        <div class="title" id="title">Clubs</div>
+
+        <!-- Container 1 -->
+        <div class="container" id="container1">
+            <div class="containerHeader">
+                <div class="container-title" id="container1Header">SELECT A CLUB</div>
+            </div>
+            <div class="picture_container ">
+                <div class="option" onclick="display('1'); return false">
+                    <!-- return false stops automatic page reload on JS scrollTo() method call -->
+                    <a href="" class="Club-label">
+                        <div class="image-box">
+                            <img class="picture" src="Images/mu.png"  alt=""/>
+                        </div>
+                        <div class="caption">
+                            Manchester United
+                        </div>
+                    </a>
+                </div>
+
+                <div class="option" onclick="display('2'); return false">
+                    <a href="" class="Club-label">
+                        <div class="image-box">
+                            <img class="picture" src="Images/Manchester-City-Logo.jpg" alt=""/>
+                        </div>
+                        <div class="caption">
+                           Manchester City
+                        </div>
+                    </a>
+                </div>
+
+                <div class="option" onclick="display('3'); return false">
+                    <a href="" class="Club-label">
+                        <div class="image-box">
+                            <img class="picture" src="Images/Arsenal.jpg" alt=""/>
+                        </div>
+                        <div class="caption">
+                            Arsenal
+                        </div>
+                    </a>
+                </div>
+
+                <div class="option" onclick="display('4'); return false">
+                    <a href="" class="Club-label">
+                        <div class="image-box">
+                            <img class="picture" src="Images/chelsea.png" alt=""/>
+                        </div>
+                        <div class="caption">
+                          Chelsea
+                        </div>
+                    </a>
+                </div>
+
+                <div class="option" onclick="display('5'); return false" id="picture5">
+                    <a href="" class="Club-label">
+                        <div class="image-box">
+                            <img class="picture" src="Images/Tottanham.png" alt=""/>
+                        </div>
+                        <div class="caption">
+                            Tottanham
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Display Container -->
+        <div class="container disabled" id="displayContainer">
+            <!-- Club 1 -->
+            <div class="Club-details disabled" id="Club-1">
+                <div class="display-container-title" id="description1">
+                    <span class="selected-image-title">Manchester United</span>
+                </div>
+                <div class="display-container-subtitle">
+                    <div class="subtitle">
+                        About The Club 
+                    </div>
+                </div>
+                <div class="display-container-image">
+                    <img class="selected-thumbnail" src="Images/mu.png"  alt="Manchester United"/>
+                </div>
+                <div class="display-container-description">
+                    <p class="Clubdescription">
+                        Manchester United Football Club is a professional football club based in Old Trafford, Greater Manchester, 
+						England, that competes in the Premier League, the top flight of English football. 
+						Nicknamed "the Red Devils", the club was founded as Newton Heath LYR Football Club in 1878, 
+						changed its name to Manchester United in 1902 and moved to its current stadium, Old Trafford, in 1910.
+                       <br /><br />
+
+                        Manchester United have won more trophies than any other club in English football, with a record 20 League titles,
+						12 FA Cups, five League Cups and a record 21 FA Community Shields. United have also won three European Cups/UEFA Champions Clubs, 
+						one UEFA Europa League, one UEFA Cup Winners' Cup, one UEFA Super Cup, 
+						one Intercontinental Cup and one FIFA Club World Cup. In 1998–99, 
+						the club became the first in the history of English football to achieve the continental European treble.
+						 By winning the UEFA Europa League in 2016–17, they became one of five clubs to have won all three main UEFA club competitions.
+                    </p>
+                </div>
+            </div>
+
+            <!--Club 2 -->
+            <div class="Club-details disabled" id="Club-2">
+                <div class="display-container-title">
+                    <span class="selected-image-title">Manchester City</span>
+                </div>
+                <div class="display-container-subtitle">
+                    <div class="subtitle">
+                        About The Club
+                    </div>
+                </div>
+                <div class="display-container-image">
+                    <img class="selected-thumbnail" src="Images/Manchester-City-Logo.jpg" alt="Manchester City"/>
+                    
+                </div>
+                <div class="display-container-description">
+                    <p class="Clubdescription">
+                        Manchester City Football Club is an English football club based in Manchester that competes in the Premier League, the top flight of English football. 
+						Founded in 1880 as St. Mark's (West Gorton), it became Ardwick Association Football Club in 1887 and Manchester City in 1894. 
+						The club's home ground is the City of Manchester Stadium in east Manchester, to which it moved in 2003, having played at Maine Road since 1923. 
+						The club adopted their sky blue home shirts in 1894 in the first season of the club's current iteration, that have been used ever since.<br/><br/>
+
+						Manchester City entered the Football League in 1892, 
+						and won their first major honour with the FA Cup in 1904. 
+						The club had its first major period of success in the late 1960s,
+						winning the League, European Cup Winners Cup, FA Cup and League Cup under the management of Joe Mercer and Malcolm Allison. 
+						After losing the 1981 FA Cup Final, the club went through a period of decline, culminating in relegation to the third tier of English football for the only time in its history in 1998. 
+						They since regained promotion to the top tier in 2001–02 and have remained a fixture in the Premier League since 2002–03.r
+                        arts.    
+                    </p>
+                </div>
+            </div>
+
+            <!-- Club 3 -->
+            <div class="Club-details disabled" id="Club-3">
+                <div class="display-container-title">
+                    <span class="selected-image-title">Arsenal</span>
+                </div>
+                <div class="display-container-subtitle">
+                    <div class="subtitle">
+                        About The Club
+                    </div>
+                </div>
+                <div class="display-container-image">
+                    <img class="selected-thumbnail" src="Images/Arsenal.jpg" alt="Arsenal"/>
+                </div>
+                <div class="display-container-description">
+                    <p class="Clubdescription">
+                      Arsenal Football Club is a professional football club based in Islington, London, England that plays in the Premier League, 
+					   the top flight of English football. The club has won 13 league titles (including one unbeaten title), 
+						a record 14 FA Cups, two League Cups, 16 FA Community Shields, the League Centenary Trophy, one European Cup Winners' Cup, and one Inter-Cities Fairs Cup.
+						Arsenal was the first club from the South of England to join The Football League, in 1893, and they reached the First Division in 1904. 
+						Relegated only once, in 1913, they continue the longest streak in the top division,[6] and have won the second-most top-flight matches in English football history. 
+						In the 1930s, Arsenal won five League Championships and two FA Cups, and another FA Cup and two Championships after the war. In 1970–71, they won their first League and FA Cup Double. 
+						Between 1989 and 2005, they won five League titles and five FA Cups, including two more Doubles. They completed the 20th century with the highest average league position.
+                </div>
+            </div>
+
+            <!-- Club 4 -->
+            <div class="Club-details disabled" id="Club-4">
+                <div class="display-container-title">
+                    <span class="selected-image-title">Chelsea</span>
+                </div>
+                <div class="display-container-subtitle">
+                    <div class="subtitle">
+							About The Club
+                    </div>
+                </div>
+                <div class="display-container-image">
+                    <img class="selected-thumbnail" src="Images/chelsea.png" alt="Chelsea"/>
+                </div>
+                <div class="display-container-description">
+                    <p class="Clubdescription">
+                        Chelsea Football Club is an English professional football club based in Fulham, 
+					   London. Founded in 1905, the club competes in the Premier League, 
+					   the top division of English football. Chelsea are among England's most successful clubs, 
+					   having won over thirty competitive honours, including six league titles and six European trophies.
+					   Their home ground is Stamford Bridge..<br/><br/>
+
+                        Chelsea won their first major honour, the League championship, 
+						in 1955. The club won the FA Cup for the first time in 1970 and their first European honour, 
+						the Cup Winners' Cup, in 1971. After a period of decline in the late 1970s and 1980s,
+						the club enjoyed a revival in the 1990s and had more success in cup competitions. 
+						The past two decades have been the most successful in Chelsea's history: they won five Premier League titles and both the UEFA Champions League and UEFA Europa League during this period.
+						Chelsea are one of five clubs to have won all three of UEFA's main club competitions, the first English club to achieve the UEFA treble, and the only London club to have won the Champions League.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Club 5 -->
+            <div class="Club-details disabled" id="Club-5">
+                <div class="display-container-title">
+                    <span class="selected-image-title">Tottanham</span>
+                </div>
+                <div class="display-container-subtitle">
+                    <div class="subtitle">
+                        About The Club
+                    </div>
+                </div>
+                <div class="display-container-image">
+                    <img class="selected-thumbnail" src="Images/Tottanham.png" alt="Tottanham"/>
+                </div>
+                <div class="display-container-description">
+                    <p class="Clubdescription">
+                        Oottenham Hotspur Football Club, commonly referred to as Tottenham (/ˈtɒtənəm/) or Spurs, 
+						is an English professional football club in Tottenham, London, that competes in the Premier League.
+						Tottenham Hotspur Stadium has been the club's home ground since April 2019, replacing their former home of White Hart Lane,
+						which had been demolished to make way for the new stadium on the same site. Their training ground is on Hotspur Way in Bulls Cross in the London Borough of Enfield.
+						The club is owned by ENIC Group. Tottenham have played in a first (home) strip of white shirts and navy blue shorts since the 1898–99 season.
+						The club's emblem is a cockerel standing upon a football, with a Latin motto Audere est Facere ("To Dare Is to Do").<br/> <br/>
+
+                        Founded in 1882, Tottenham won the FA Cup for the first time in 1901, the only non-League club to do so since the formation of the Football League in 1888. 
+						Tottenham were the first club in the 20th century to achieve the League and FA Cup Double, winning both competitions in the 1960–61 season.
+						After successfully defending the FA Cup in 1962, in 1963 they became the first British club to win a UEFA club competition – the European Cup Winners' Cup.
+						They were also the inaugural winners of the UEFA Cup in 1972, becoming the first British club to win two different major European trophies. 
+						They collected at least one major trophy in each of the six decades from the 1950s to 2000s – an achievement only matched by Manchester United.
+						In total, Spurs have won two league titles, eight FA Cups, four League Cups, seven FA Community Shields, one European Cup Winners' Cup and two UEFA Cups.
+						Tottenham were also the runners-up in the 2018–19 UEFA Champions League. They have a long-standing rivalry with nearby club Arsenal, with whom they contest the North London derby.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <!--  Background Color Changer -->
+        <select class="background-color-selector" onchange="changeBodyBg(this.value)">
+            <option value="" selected disabled hidden> -- Select Background Color -- </option>
+            <option value="#FFFFFF">White</option>
+            <option value="#C1A57B">Gold</option>
+            <option value="#30475E">Dark Blue</option>
+            <option value="#ECECEC">Grey</option>
+        </select>
+
+        <!--  Text Color Changer -->
+        <select class="text-color-selector" onchange="changeTextColor(this.value)">
+            <option value="" selected disabled hidden> -- Select Text Color -- </option>
+            <option value="#FFFFFF">White</option>
+            <option value="#C1A57B">Gold</option>
+            <option value="#30475E">Dark Blue</option>
+            <option value="#ECECEC">Grey</option>
+            <option value="#BF1010">Red</option>
+            <option value="#000000">Black</option>
+        </select>
+
+    </div>
+	<!--  footer -->
+    <footer class="footer">
+		<div class="footer-subscribe">
+            <label for="newsletter" id="label-newsletter">Join Our Newsletter</label><br>
+            <input  type="email" id="email-text" placeholder="Put your email address here..." />
+            <br/>
+            <button onclick="subscribeBtnClicked();" id="subscribeBtn">Subscribe</button>
+        </div>
+		<div class="footer-content">
+            <a href="news.html">News</a><br>
+            <a href="#shop">Shop</a><br>
+            <a href="#quiz">Quiz</a><br>
+            <a href="#aboutus">About Us</a><br>
+            <a href="#tickets">Tickets</a><br>
+            <a href="#sitemap">Sitemap</a><br>
+        </div>
+
+        <div class="footer-editor">
+            <span id="footerEditor">The page is edited by:<br>
+                <a href="student4PageEditor.html" class="page-editor">Yatheesha Rangodage</a>
+            </span>
+        </div>
+
+
+	</footer>
+</body>
+</html>

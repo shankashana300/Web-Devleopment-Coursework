@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Football Central</title>
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="CSS/feedbackForm.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+	<link href="https://fonts.googleapis.com/css2?family=Contrail+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-----header----->
+	<header class="header">
+		<a href="mainpage.html">
+			<img class="navlogo" src="images/footballLogo.png" alt="logo"/>
+		</a>
+		<a href="mainpage.html" class="name">
+			<span id="name">Football Central</span>
+		</a>
+		<nav class="navbar">
+			<a class="header-nav" href="news.html">News</a>
+			<a class="header-nav" href="shop.html">Shop</a>
+			<a class="header-nav" href="thumbnail.html">Clubs</a>
+			<a class="header-nav" href="Student Details.html">About Us</a>
+		</nav>
+		<a id="feedback-btn" href="feedbackForm.html">
+			<button>Contact</button>
+		</a>
+	</header>
+	<!-----feedback form----->
+	<div class="container">
+		<div class="topic" id="feedbackName">Feedback </div>
+		<p>We value your feedback.<br>
+		Please complete the following form and help us improve our customer experience.</p>
+	<hr>
+	<!-----feedabck form content----->
+	<div class="form-feedback">
+		<form class="feedbackForm" action="mailto:meeshacs.17@gmail.com" name="feedbackForm" method="post" enctype="text/plain">
+			<!-----first name field----->
+			<div class="formFirstName">
+				<label for="firstname" class="form-label">First Name</label>
+				<input type="text" id="firstname" name="firstname" placeholder="Enter Your First Name"  class="form-text"/>
+			</div>
+			<br>
+			<!-----last name field----->
+			<div class="formLastName">
+				<label for="lastname" class="form-label">Last Name</label>
+				<input type="text" id="lastname" name="lastname" placeholder="Enter Your Last Name" class="form-text"/>
+			</div>
+			<br>
+			<!-----email field----->
+			<div class="email">
+				<label for="email" class="form-label">Email</label>
+				<input type="text" id="email" name="email" placeholder="Enter your email" class="form-text"/>
+			</div>
+			<br>
+			<!-----subject field----->
+			<div class="subject">
+				<label for="subject" class="form-label">Subject</label>
+				<input type="text" id="subject" name="subject" class="form-subject"/>
+			</div>
+			<br>
+			<!-----comment box ----->
+			<div class="comment">
+				<label for="comments" class="form-label">Comments</label>
+				<textarea name="comments" id="comments" rows="20" cols="110"></textarea>
+			</div>
+			<!-----radio buttons to rate the website----->
+			<div class="rate">
+				<p class="rate-form"><b>How would you rate your experiance with this website?</b></p><br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<label for="verySatis" class="btn-label">Very Satisified</label>
+					<input type="radio" name="rate" id="verySatis" value="verySatisfied"><br>
+				<label for="satis" class="btn-label"> Satisified</label>
+					<input type="radio" name="rate" id="satis" value="Satisfied"><br>
+				<label for="notsatis" class="btn-label"> Not Satisified</label>
+					<input type="radio" name="rate" id="notSatis" value="notSatisfied"><br>
+			</div>
+			<!-----button to display the modal box----->
+			<input type="button" onclick="feedback();" id="btn" value="Check"/>
+			<!-----modal box----->
+			<div id="modal" class="modal">
+				<div class="modal-content">
+					<!-----to close the modal box----->
+					<span class="close">&times;</span>
+					<!-----modal box content----->
+					<p id="form-content1" class="form-content">	</p>
+					<p id="form-content2" class="form-content">	</p>
+					<p id="form-content3" class="form-content">	</p>
+					<p id="form-content4" class="form-content">	</p>
+					<p id="form-content5" class="form-content">	</p>
+					<p id="form-content6" class="form-content">	</p>
+					<!-----submit button----->
+					<input type="button" id="btnsubmit" value="Submit" onclick="submitForm()"/>
+			</div>
+		</form>
+	</div>
+	</div>
+	<br>
+	<!-----footer----->
+	<footer class="footer">
+		<!-----subscribe field----->
+		<div class="footer-subscribe">
+            <label for="newsletter" id="label-newsletter">Join Our Newsletter</label><br>
+            <input  type="email" id="email-text" placeholder="Put your email address here..." />
+            <br/>
+			<!-----subscribe button---->
+            <button onclick="subscribeBtnClicked();" id="subscribeBtn">Subscribe</button>
+        </div>
+		<div class="footer-content">
+            <a href="news.html">News</a><br>
+            <a href="shop.html">Shop</a><br>
+            <a href="Introduction.html">Quiz</a><br>
+            <a href="Student Details.html">About Us</a><br>
+            <a href="thumbnail.html">Clubs</a><br>
+            <a href="sitemap.html">Sitemap</a><br>
+        </div>
+
+        <div class="footer-editor">
+            <span id="footerEditor">The page is edited by:<br>
+                <a href="student2PageEditor.html" class="page-editor">Ameesha Senanayake</a>
+            </span>
+        </div>
+
+
+	</footer>
+	
+</body>
+<script src="JS/feedbackForm.js"></script>
+<script src="JS/mainpage.js"></script>
+</html>
